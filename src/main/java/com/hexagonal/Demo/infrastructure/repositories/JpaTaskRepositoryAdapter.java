@@ -4,10 +4,11 @@ import com.hexagonal.Demo.domain.models.Task;
 import com.hexagonal.Demo.domain.ports.out.TaskRepositoryPort;
 import com.hexagonal.Demo.infrastructure.entities.TaskEntity;
 import org.springframework.data.crossstore.ChangeSetPersister;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
-
+@Component
 public class JpaTaskRepositoryAdapter implements TaskRepositoryPort {
 
     private final JpaTaskRepository jpaTaskRepository;

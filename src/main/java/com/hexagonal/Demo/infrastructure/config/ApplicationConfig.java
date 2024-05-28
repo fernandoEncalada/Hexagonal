@@ -40,6 +40,6 @@ public class ApplicationConfig {
 
     @Bean
     public ExternalServicePort externalServicePort(){
-        return new ExternalServiceAdapter(restTemplate);
+        return new ExternalServiceAdapter();
     }
 }
